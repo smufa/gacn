@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b42jtrfgkvc18"]
+
+[ext_resource type="Script" uid="uid://d280j8d7584ug" path="res://sacn_sender.gd" id="1_ig7tw"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="SacnSender" type="SacnSender" parent="."]
+preview = false
+script = ExtResource("1_ig7tw")
+
+[node name="SacnSender2" type="SacnSender" parent="."]
+universe = 2
+preview = false
+script = ExtResource("1_ig7tw")
