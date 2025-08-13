@@ -1,14 +1,76 @@
-[gd_scene load_steps=2 format=3 uid="uid://b42jtrfgkvc18"]
+[gd_scene load_steps=3 format=3 uid="uid://b42jtrfgkvc18"]
 
-[ext_resource type="Script" uid="uid://d280j8d7584ug" path="res://sacn_sender.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b6cqdixwtkti7" path="res://Stage.glb" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dx8e42tkk6ltx" path="res://LedBar.gd" id="2_0xm2m"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="SacnSender" type="SacnSender" parent="."]
-preview = false
-script = ExtResource("1_ig7tw")
+[node name="Stage" parent="." instance=ExtResource("1_0xm2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.116918, 0, -0.270801)
 
-[node name="SacnSender2" type="SacnSender" parent="."]
+[node name="SacnReceiver" type="SacnReceiver" parent="."]
+preview = true
+
+[node name="LedBar" type="Node3D" parent="."]
+transform = Transform3D(-1.31134e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.31134e-08, 4.36337, 0.9901, -1.00828)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar2" type="Node3D" parent="."]
+transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 4.37293, 0.0284018, -1.16748)
+script = ExtResource("2_0xm2m")
 universe = 2
-preview = false
-script = ExtResource("1_ig7tw")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar8" type="Node3D" parent="."]
+transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 5.00246, 0.396587, -2.66516)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar9" type="Node3D" parent="."]
+transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 5.00246, 0.396587, 2.14523)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar3" type="Node3D" parent="."]
+transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 4.37183, 0.0144925, 0.685637)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar4" type="Node3D" parent="."]
+transform = Transform3D(-0.289778, -0.0776458, 3.394e-09, -4.61511e-16, -1.31134e-08, -0.3, 0.0776458, -0.289778, 1.26666e-08, 4.15168, 2.24278, 0.328237)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar5" type="Node3D" parent="."]
+transform = Transform3D(-0.289778, 0.0776457, -3.394e-09, -2.04137e-16, -1.31134e-08, -0.3, -0.0776457, -0.289778, 1.26666e-08, 4.15168, 2.24278, -0.712705)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar6" type="Node3D" parent="."]
+transform = Transform3D(-0.289778, -0.0776458, 3.394e-09, -4.61511e-16, -1.31134e-08, -0.3, 0.0776458, -0.289778, 1.26666e-08, 2.76264, 2.24278, 0.328237)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="LedBar7" type="Node3D" parent="."]
+transform = Transform3D(-0.289778, 0.0776457, -3.394e-09, -2.04137e-16, -1.31134e-08, -0.3, -0.0776457, -0.289778, 1.26666e-08, 2.76264, 2.24278, -0.712705)
+script = ExtResource("2_0xm2m")
+strength = 20
+spawn_lights = false
+metadata/_custom_type_script = "uid://dx8e42tkk6ltx"

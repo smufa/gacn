@@ -4,7 +4,7 @@
 #include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/core/property_info.hpp>
 #include <godot_cpp/core/class_db.hpp>
-#include <e131.h>
+#include "e131.h"
 
 namespace godot {
 
