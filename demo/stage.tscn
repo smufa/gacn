@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://n3p61384nmf6"]
+
+[ext_resource type="PackedScene" uid="uid://b6cqdixwtkti7" path="res://Stage.glb" id="1_6eo5e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aees8"]
+albedo_color = Color(0.103744, 0.103744, 0.103744, 1)
+
+[node name="Stage" instance=ExtResource("1_6eo5e")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aees8")
+
+[node name="Plane_001" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aees8")
+
+[node name="Plane_002" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aees8")
+
+[node name="Plane_003" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aees8")
+
+[node name="Plane_004" parent="." index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aees8")
+
+[node name="Plane_005" parent="." index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aees8")
+
+[node name="Cube" parent="." index="6"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aees8")

@@ -1,76 +1,81 @@
 [gd_scene load_steps=3 format=3 uid="uid://b42jtrfgkvc18"]
 
-[ext_resource type="PackedScene" uid="uid://b6cqdixwtkti7" path="res://Stage.glb" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dx8e42tkk6ltx" path="res://LedBar.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://n3p61384nmf6" path="res://stage.tscn" id="2_h2yge"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Stage" parent="." instance=ExtResource("1_0xm2m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.116918, 0, -0.270801)
-
 [node name="SacnReceiver" type="SacnReceiver" parent="."]
-preview = true
 
 [node name="LedBar" type="Node3D" parent="."]
 transform = Transform3D(-1.31134e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.31134e-08, 4.36337, 0.9901, -1.00828)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar2" type="Node3D" parent="."]
 transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 4.37293, 0.0284018, -1.16748)
 script = ExtResource("2_0xm2m")
 universe = 2
-strength = 20
-spawn_lights = false
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar8" type="Node3D" parent="."]
 transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 5.00246, 0.396587, -2.66516)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+universe = 8
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar9" type="Node3D" parent="."]
 transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 5.00246, 0.396587, 2.14523)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+universe = 9
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar3" type="Node3D" parent="."]
 transform = Transform3D(-1.31134e-08, -2.75853e-16, -0.3, 0.3, 0, -1.31134e-08, 0, -0.3, 6.66134e-16, 4.37183, 0.0144925, 0.685637)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+universe = 3
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar4" type="Node3D" parent="."]
 transform = Transform3D(-0.289778, -0.0776458, 3.394e-09, -4.61511e-16, -1.31134e-08, -0.3, 0.0776458, -0.289778, 1.26666e-08, 4.15168, 2.24278, 0.328237)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+universe = 4
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar5" type="Node3D" parent="."]
 transform = Transform3D(-0.289778, 0.0776457, -3.394e-09, -2.04137e-16, -1.31134e-08, -0.3, -0.0776457, -0.289778, 1.26666e-08, 4.15168, 2.24278, -0.712705)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+universe = 5
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar6" type="Node3D" parent="."]
 transform = Transform3D(-0.289778, -0.0776458, 3.394e-09, -4.61511e-16, -1.31134e-08, -0.3, 0.0776458, -0.289778, 1.26666e-08, 2.76264, 2.24278, 0.328237)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+universe = 6
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
 
 [node name="LedBar7" type="Node3D" parent="."]
 transform = Transform3D(-0.289778, 0.0776457, -3.394e-09, -2.04137e-16, -1.31134e-08, -0.3, -0.0776457, -0.289778, 1.26666e-08, 2.76264, 2.24278, -0.712705)
 script = ExtResource("2_0xm2m")
-strength = 20
-spawn_lights = false
+universe = 7
+strength = 200
 metadata/_custom_type_script = "uid://dx8e42tkk6ltx"
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.24545e-08, -0.238076, -0.971247, -1.04066e-08, 0.971247, -0.238076, 1, 8.88179e-16, -4.37114e-08, -0.185495, 0.833084, 0)
+fov = 74.7341
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(-5.96046e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, -4.69041, 0, 0)
+spot_range = 12.7705
+
+[node name="Stage" parent="." instance=ExtResource("2_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.116918, 0, -0.270801)
